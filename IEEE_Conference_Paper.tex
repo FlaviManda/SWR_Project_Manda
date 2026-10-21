@@ -1,0 +1,68 @@
+\documentclass[10pt,twocolumn,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.7in,top=0.75in,bottom=1in]{geometry}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+
+% IEEE-like formatting styles
+\titleformat{\section}{\centering\scshape\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\bfseries\itshape}{\thesubsection.}{0.5em}{}
+
+\renewenvironment{abstract}{%
+  \begin{center}\bfseries\small Abstract\end{center}%
+  \quotation\small\itshape
+}{\endquotation\vspace{1em}}
+
+\newcommand{\keywords}[1]{\par\vspace{0.5em}\noindent\textbf{\textit{Index Terms---}}#1\par\vspace{1em}}
+
+\title{\LARGE\textbf{Scientific Writing for Research: IEEE Conference Article Framework}\thanks{Laboratory assignment for the Scientific Writing for Research course, Master's Program, Politehnica University of Timi\c{s}oara.}}
+
+\author{
+  \textbf{Flavian-Alexandru Manda} \\
+  Faculty of Automation and Computers \\
+  Politehnica University of Timi\c{s}oara \\
+  Timi\c{s}oara, Romania \\
+  \texttt{student@upt.ro}
+}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document demonstrates the integration of the official IEEE conference paper template format as required for Week 3 of the Scientific Writing for Research (SWR) laboratory. The article framework implements the standardized double-column layout and the IMRaD (Introduction, Methodology, Results, and Discussion) structural paradigm. This compiled document verifies the environment toolchain (MiKTeX and TeXstudio) and provides the structural scaffold for subsequent iterative research drafting and evaluation.
+\end{abstract}
+
+\keywords{IEEE conference template, scientific writing, research methodology, IMRaD model, LaTeX.}
+
+\section{Introduction}
+Scientific communication in engineering disciplines requires exact formatting, formal argumentation, and rigorous grounding in prior research \cite{ecarnot2015writing}. In accordance with the course roadmap, this study establishes the IEEE conference manuscript structure. 
+
+The primary purpose of the introduction is to frame the problem statement, conduct a focused literature survey, identify a distinct knowledge gap, formulate the core research questions, and outline the specific contributions of the study.
+
+\section{Methodology}
+The methodology section provides a comprehensive description of the theoretical foundations, system architecture, and experimental protocols \cite{thuan2019construction}. In computer science and engineering, studies typically employ experimental, constructive, or formal verification methodologies.
+
+Every experimental technique and metric reported in the subsequent section must have a corresponding procedural description detailed here to ensure reproducibility by independent researchers.
+
+\section{Results}
+The results section presents the empirical outcomes, simulation metrics, or system benchmarks. Findings are organized logically using concise tables and high-resolution diagrams. In adherence to scientific publishing standards, data is never redundantly duplicated between text and display items; instead, each figure and table is contextualized and described directly in the text.
+
+\section{Discussion}
+The discussion answers the central question: \textit{what do the results mean?} This section interprets the findings, correlates them with the state of the art, analyzes potential anomalies, and explicitly outlines the limitations of the proposed approach.
+
+\section{Conclusion}
+The conclusion synthesizes the primary contributions of the research, reflects upon the original objectives established in the introduction, and outlines promising directions for future investigation.
+
+\begin{thebibliography}{00}
+\bibitem{ecarnot2015writing} F. Ecarnot, M.-F. Seronde, R. Chopard, F. Schiele, and N. Meneveau, ``Writing a scientific article: A step-by-step guide for beginners,'' \textit{European Geriatric Medicine}, vol. 6, no. 6, pp. 573--579, 2015.
+\bibitem{thuan2019construction} N. H. Thuan, A. Drechsler, and P. Antunes, ``Construction of design science research questions,'' \textit{Communications of the Association for Information Systems}, vol. 44, no. 1, p. 20, 2019.
+\bibitem{gruba2017write} P. Gruba and J. Zobel, \textit{How to write your first thesis}. Springer, 2017.
+\end{thebibliography}
+
+\end{document}
